@@ -1,0 +1,16 @@
+
+<%= form_tag sessions_path do |form| %>
+
+  <h1>Login</h1>
+
+  <div class="field">
+    <%= label_tag :email %>
+    <%= text_field_tag :email %>
+  </div>
+
+  <div class="actions">
+    <p class="float-right">Not a user? <%= link_to 'Sign Up', '/signup'  %></p>
+    <%= submit_tag "Login" %>
+  </div>
+
+<% end %>

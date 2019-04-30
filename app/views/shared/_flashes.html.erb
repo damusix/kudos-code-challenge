@@ -1,0 +1,15 @@
+<section id="flashes">
+
+    <% if  flash[:notice] %>
+        <div class="alert success">
+            <%= notice %>
+            <a class="close"></a>
+        </div>
+    <% end%>
+    <% if  flash[:alert] %>
+        <div class="alert error">
+            <%= alert %>
+            <a class="close"></a>
+        </div>
+    <% end%>
+</section>

@@ -1,0 +1,29 @@
+section#navigation {
+
+    position: fixed;
+    height: $nav-height;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 90;
+    background-color: $white;
+    box-shadow: 0 -5px 10px 0 $black;
+
+    a, span, b {
+        display: inline-block;
+        line-height: $nav-height;
+        padding: 0 0.5rem;
+    }
+
+    .button, button {
+
+        margin: 0;
+        line-height: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    nav.user {
+
+        padding-right: 1rem;
+    }
+}

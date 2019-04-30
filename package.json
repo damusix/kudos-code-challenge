@@ -1,0 +1,9 @@
+{
+  "name": "kudos",
+  "private": true,
+  "dependencies": {
+    "dayjs": "^1.8.13",
+    "flyd": "^0.2.8",
+    "preact": "^8.4.2"
+  }
+}

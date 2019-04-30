@@ -1,0 +1,18 @@
+<section id="navigation" class="grid">
+
+    <section class="brand column w-20">
+        <a href="/">Kudos</a>
+    </section>
+
+    <nav class="user column w-80 text-right">
+        <% if @current_user %>
+            <b>
+                <i class="fas fa-user"></i>
+                <%= @current_user.email %>
+            </b>
+            <%= link_to logout_path, class: [:button, :red] do %>
+                <i class="fas fa-sign-out-alt fa-fw"></i>
+            <% end %>
+        <% end %>
+    </nav>
+</section>

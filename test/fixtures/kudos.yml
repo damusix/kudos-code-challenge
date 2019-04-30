@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  from: 
+  to: 
+  amount: 1
+  comment: MyString
+
+two:
+  from: 
+  to: 
+  amount: 1
+  comment: MyString

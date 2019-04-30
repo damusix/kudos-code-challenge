@@ -1,0 +1,36 @@
+a {
+	color: $black;
+	text-decoration: none;
+
+	&:focus,
+	&:hover {
+        color: $primary;
+    }
+
+	&.secondary {
+		color: $secondary;
+
+		&:focus,
+		&:hover {
+	        color: $black;
+	    }
+	}
+
+	&.white {
+		color: $white;
+
+		&:focus,
+		&:hover {
+	        color: $black;
+	    }
+	}
+
+	&.black {
+		color: $black;
+
+		&:focus,
+		&:hover {
+	        color: $grey;
+	    }
+	}
+}

@@ -1,0 +1,10 @@
+.modal {
+
+    position: fixed;
+    top: 2rem;
+    left: 50%;
+    margin-left: -10rem;
+    width: 20rem;
+    background-color: $white;
+    z-index: 110;
+}

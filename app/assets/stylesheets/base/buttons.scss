@@ -1,0 +1,204 @@
+.button,
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+    /* font-family: "work-sans", sans-serif; */
+
+	background-color: $primary;
+	border: .1rem solid  $primary;
+	border-radius: .25rem;
+	color: $white;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1rem;
+	font-weight: 400;
+	letter-spacing: .1rem;
+	line-height: $form-height;
+	padding: 0 2rem;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	white-space: nowrap;
+
+
+	&:focus,
+	&:hover {
+    	background-color: $black;
+    	border-color: $black;
+        color: $white;
+    }
+
+    &[disabled] {
+
+		cursor: not-allowed;
+		opacity: .5;
+
+		&:focus,
+		&:hover {
+
+            background-color: $primary;
+            border-color: $primary;
+            color: $white;
+        }
+    }
+
+	&.sm {
+		font-size: 0.75rem;
+		// height: $form-height * 0.75;
+		line-height: $form-height * 0.75;
+		padding: 0 1.0rem;
+	}
+
+
+	&.lg {
+		font-size: 1.25rem;
+		// height: $form-height * 1.25;
+		line-height: $form-height * 1.25;
+		padding: 0 3.5rem;
+	}
+
+    &.rounded {
+
+        border-radius: 100px;
+    }
+
+    &.outline {
+        background-color: transparent;
+        color: $primary;
+
+    	&:focus,
+    	&:hover {
+        	background-color: $primary;
+        	border-color: $primary;
+            color: $white;
+        }
+
+        &[disabled] {
+
+    		&:focus,
+    		&:hover {
+
+                background-color: transparent;
+                border-color: $primary;
+                color: $primary;
+            }
+        }
+    }
+
+    &.white {
+
+        background-color: $white;
+        border-color: $white;
+        color: $black;
+
+        &:focus,
+        &:hover {
+            background-color: $black;
+            border-color: $black;
+            color: $white;
+        }
+
+        &[disabled] {
+
+            &:focus,
+            &:hover {
+
+                background-color: $white;
+                border-color: $white;
+                color: $black;
+            }
+        }
+
+        &.outline {
+            background-color: transparent;
+            color: $white;
+            border-color: $white;
+
+        	&:focus,
+        	&:hover {
+
+                background-color: $white;
+                border-color: $white;
+                color: $black;
+            }
+
+            &[disabled] {
+
+        		&:focus,
+        		&:hover {
+
+                    background-color: transparent;
+                    color: $white;
+                    border-color: $white;
+                }
+            }
+        }
+    }
+
+	&.red {
+
+        background-color: $red;
+        border-color: $red;
+        color: $white;
+		padding: 0 1.5rem;
+
+        &:focus,
+        &:hover {
+            background-color: $black;
+            border-color: $black;
+            color: $white;
+        }
+
+        &[disabled] {
+
+            &:focus,
+            &:hover {
+
+                background-color: $white;
+                border-color: $white;
+                color: $black;
+            }
+        }
+
+        &.outline {
+            background-color: transparent;
+            color: $white;
+            border-color: $white;
+
+        	&:focus,
+        	&:hover {
+
+                background-color: $white;
+                border-color: $white;
+                color: $black;
+            }
+
+			&.square {
+				background-color: $red;
+				color: $white;
+				border-color: $red;
+				border-radius: 1px;
+
+				&:focus,
+				&:hover {
+
+					background-color: $white;
+					border-color: $white;
+					color: $black;
+				}
+			}
+
+            &[disabled] {
+
+        		&:focus,
+        		&:hover {
+
+                    background-color: transparent;
+                    color: $white;
+                    border-color: $white;
+                }
+            }
+        }
+    }
+ }

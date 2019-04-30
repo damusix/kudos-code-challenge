@@ -1,0 +1,37 @@
+.alert {
+
+    padding: 0.5rem 2.5rem 0.5rem 1rem;
+    position: relative;
+    margin-bottom: 1rem;
+    background: $greydark;
+    color: $white;
+    border-radius: 0.25rem;
+
+    .close {
+
+        position: absolute;
+        color: $white;
+        top: 0rem;
+        right: 0rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        line-height: 2.5rem;
+        text-align: center;
+        opacity: 0.5;
+
+        &:after {
+
+            content: 'x';
+        }
+
+        &:hover {
+            opacity: 1;
+            cursor: pointer;
+        }
+    }
+
+    &.success { background-color: $success; }
+    &.warning { background-color: $warning; }
+    &.error { background-color: $error; }
+    &.info { background-color: $info; }
+}

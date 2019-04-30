@@ -1,0 +1,22 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: $font-size;
+    box-sizing: border-box;
+}
+
+body {
+	color: $black;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	font-weight: 300;
+	letter-spacing: .01em;
+	line-height: 1.6;
+    padding-top: $nav-height + 1rem;
+}
